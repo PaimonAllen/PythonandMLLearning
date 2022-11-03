@@ -171,6 +171,9 @@ PytorchLearning/demo1/imgs/
 
 /.vscode/
 /KerasandAudio/dataset/
+PytorchLearning/learn1/dataset/
+PytorchLearning/learn1/logs/
+logs/
 
 
 

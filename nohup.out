@@ -1,0 +1,114 @@
+[W 15:15:38.844 NotebookApp] WARNING: The notebook server is listening on all IP addresses and not using encryption. This is not recommended.
+[I 15:15:38.845 NotebookApp] Serving notebooks from local directory: /home/tzr/Documents/PycharmSYNC/PythonandMLLearning
+[I 15:15:38.845 NotebookApp] Jupyter Notebook 6.4.11 is running at:
+[I 15:15:38.845 NotebookApp] http://tzrServer:8890/
+[I 15:15:38.845 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[E 15:15:45.776 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/handlers.py", line 89, in post
+        yield maybe_future(km.restart_kernel(kernel_id))
+      File "/home/tzr/.local/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+        value = future.result()
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/asyncio/futures.py", line 178, in result
+        raise self._exception
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/asyncio/tasks.py", line 280, in __step
+        result = coro.send(None)
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py", line 313, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py", line 394, in _check_kernel_id
+        raise web.HTTPError(404, f'Kernel does not exist: {kernel_id}')
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 9a2812ae-4cd8-44cd-b772-80622162de62)
+[E 15:15:45.776 NotebookApp] {
+      "Host": "192.168.8.102:8890",
+      "User-Agent": "Apache-HttpClient/4.5.13 (Java/11.0.11)"
+    }
+[E 15:15:45.776 NotebookApp] 500 POST /api/kernels/9a2812ae-4cd8-44cd-b772-80622162de62/restart (192.168.8.103) 1.210000ms referer=None
+[W 15:15:45.783 NotebookApp] 404 DELETE /api/sessions/800b1e17-6b31-48d3-8f1e-f95fe0eabe20 (192.168.8.103): Session not found: session_id='800b1e17-6b31-48d3-8f1e-f95fe0eabe20'
+[W 15:15:45.784 NotebookApp] Session not found: session_id='800b1e17-6b31-48d3-8f1e-f95fe0eabe20'
+[W 15:15:45.784 NotebookApp] 404 DELETE /api/sessions/800b1e17-6b31-48d3-8f1e-f95fe0eabe20 (192.168.8.103) 0.810000ms referer=None
+[I 15:15:45.791 NotebookApp] 302 GET /api/kernelspecs/ (192.168.8.103) 0.190000ms
+[I 15:15:45.922 NotebookApp] Kernel started: c6013930-f3b2-406d-aa8b-03899ae1f76c, name: python3
+[I 15:15:47.218 NotebookApp] Kernel restarted: c6013930-f3b2-406d-aa8b-03899ae1f76c
+[I 15:15:47.224 NotebookApp] Kernel shutdown: c6013930-f3b2-406d-aa8b-03899ae1f76c
+[I 15:15:47.225 NotebookApp] 302 GET /api/kernelspecs/ (192.168.8.103) 0.260000ms
+Traceback (most recent call last):
+  File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/tzr/.local/lib/python3.8/site-packages/ipykernel_launcher.py", line 15, in <module>
+    from ipykernel import kernelapp as app
+  File "/home/tzr/.local/lib/python3.8/site-packages/ipykernel/__init__.py", line 2, in <module>
+    from .connect import *
+  File "/home/tzr/.local/lib/python3.8/site-packages/ipykernel/connect.py", line 10, in <module>
+    import jupyter_client
+  File "/home/tzr/.local/lib/python3.8/site-packages/jupyter_client/__init__.py", line 2, in <module>
+    from ._version import __version__  # noqa
+  File "/home/tzr/.local/lib/python3.8/site-packages/jupyter_client/_version.py", line 2, in <module>
+    from typing import List
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 971, in get_code
+  File "<frozen importlib._bootstrap_external>", line 640, in _compile_bytecode
+KeyboardInterrupt
+[W 15:15:51.862 NotebookApp] No session ID specified
+[W 15:15:51.862 NotebookApp] 404 GET /api/kernels/7d15b8ac-0e84-4dc7-a009-6c607c0722f3/channels (192.168.8.103): Kernel does not exist: 7d15b8ac-0e84-4dc7-a009-6c607c0722f3
+[W 15:15:51.875 NotebookApp] 404 GET /api/kernels/7d15b8ac-0e84-4dc7-a009-6c607c0722f3/channels (192.168.8.103) 13.890000ms referer=None
+[E 15:15:54.342 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/handlers.py", line 89, in post
+        yield maybe_future(km.restart_kernel(kernel_id))
+      File "/home/tzr/.local/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+        value = future.result()
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/asyncio/futures.py", line 178, in result
+        raise self._exception
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/asyncio/tasks.py", line 280, in __step
+        result = coro.send(None)
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py", line 313, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py", line 394, in _check_kernel_id
+        raise web.HTTPError(404, f'Kernel does not exist: {kernel_id}')
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: 7d15b8ac-0e84-4dc7-a009-6c607c0722f3)
+[E 15:15:54.342 NotebookApp] {
+      "Host": "192.168.8.102:8890",
+      "User-Agent": "Apache-HttpClient/4.5.13 (Java/11.0.11)"
+    }
+[E 15:15:54.342 NotebookApp] 500 POST /api/kernels/7d15b8ac-0e84-4dc7-a009-6c607c0722f3/restart (192.168.8.103) 0.810000ms referer=None
+[W 15:15:54.350 NotebookApp] 404 DELETE /api/sessions/28876ab4-d96b-48a0-9590-a2931bd8a1d9 (192.168.8.103): Session not found: session_id='28876ab4-d96b-48a0-9590-a2931bd8a1d9'
+[W 15:15:54.350 NotebookApp] Session not found: session_id='28876ab4-d96b-48a0-9590-a2931bd8a1d9'
+[W 15:15:54.350 NotebookApp] 404 DELETE /api/sessions/28876ab4-d96b-48a0-9590-a2931bd8a1d9 (192.168.8.103) 0.830000ms referer=None
+[I 15:15:54.352 NotebookApp] 302 GET /api/kernelspecs/ (192.168.8.103) 0.170000ms
+[I 15:15:54.380 NotebookApp] Kernel started: dad5c4dd-a8f3-421e-a9f4-3bae3cb705e4, name: python3
+[W 15:15:56.118 NotebookApp] No session ID specified
+[W 15:16:09.863 NotebookApp] No session ID specified
+[W 15:16:09.863 NotebookApp] 404 GET /api/kernels/c6013930-f3b2-406d-aa8b-03899ae1f76c/channels (192.168.8.103): Kernel does not exist: c6013930-f3b2-406d-aa8b-03899ae1f76c
+[W 15:16:09.864 NotebookApp] 404 GET /api/kernels/c6013930-f3b2-406d-aa8b-03899ae1f76c/channels (192.168.8.103) 1.410000ms referer=None
+[E 15:16:13.208 NotebookApp] Exception restarting kernel
+    Traceback (most recent call last):
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/handlers.py", line 89, in post
+        yield maybe_future(km.restart_kernel(kernel_id))
+      File "/home/tzr/.local/lib/python3.8/site-packages/tornado/gen.py", line 762, in run
+        value = future.result()
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/asyncio/futures.py", line 178, in result
+        raise self._exception
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/asyncio/tasks.py", line 280, in __step
+        result = coro.send(None)
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py", line 313, in restart_kernel
+        self._check_kernel_id(kernel_id)
+      File "/home/tzr/anaconda3/envs/RockLabTorch/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py", line 394, in _check_kernel_id
+        raise web.HTTPError(404, f'Kernel does not exist: {kernel_id}')
+    tornado.web.HTTPError: HTTP 404: Not Found (Kernel does not exist: c6013930-f3b2-406d-aa8b-03899ae1f76c)
+[E 15:16:13.208 NotebookApp] {
+      "Host": "192.168.8.102:8890",
+      "User-Agent": "Apache-HttpClient/4.5.13 (Java/11.0.11)"
+    }
+[E 15:16:13.208 NotebookApp] 500 POST /api/kernels/c6013930-f3b2-406d-aa8b-03899ae1f76c/restart (192.168.8.103) 0.710000ms referer=None
+[W 15:16:13.213 NotebookApp] 404 DELETE /api/sessions/69e398ba-537f-4d3f-93d8-c056cd4c2e5b (192.168.8.103): Session not found: session_id='69e398ba-537f-4d3f-93d8-c056cd4c2e5b'
+[W 15:16:13.213 NotebookApp] Session not found: session_id='69e398ba-537f-4d3f-93d8-c056cd4c2e5b'
+[W 15:16:13.214 NotebookApp] 404 DELETE /api/sessions/69e398ba-537f-4d3f-93d8-c056cd4c2e5b (192.168.8.103) 0.610000ms referer=None
+[I 15:16:13.216 NotebookApp] 302 GET /api/kernelspecs/ (192.168.8.103) 0.170000ms
+[I 15:16:13.242 NotebookApp] Kernel started: 2b4b5ec2-781a-4c03-b00d-003de812123e, name: python3
+[W 15:16:14.974 NotebookApp] No session ID specified
+[W 15:16:47.219 NotebookApp] Timeout waiting for kernel_info_reply: c6013930-f3b2-406d-aa8b-03899ae1f76c
