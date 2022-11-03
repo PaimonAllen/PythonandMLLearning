@@ -177,7 +177,7 @@ logs/
 PytorchLearning/learn1/vggmodel/
 
 nohup.out
-/dataset/
+dataset/
 
 
 
