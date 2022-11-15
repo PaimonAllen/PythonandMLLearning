@@ -6,6 +6,8 @@ import torchvision
 from PIL import Image
 from torch import nn
 
+# from VGGmodel import VGG
+
 image_path = "/home/tzr/Documents/PycharmSYNC/PythonandMLLearning/PytorchLearning/learn1/dataset/bees/train/ants_image/0013035.jpg"
 image = Image.open(image_path)
 # print(image)
@@ -14,6 +16,8 @@ transform = torchvision.transforms.Compose([torchvision.transforms.Resize((32, 3
                                             torchvision.transforms.ToTensor()])
 # 转为tensor类
 image = transform(image)
+
+
 # print(image.shape)
 
 
@@ -37,14 +41,15 @@ class VGG(nn.Module):
         return x
 
 
-# model = torch.load("/home/tzr/Documents/PycharmSYNC/PythonandMLLearning/PytorchLearning/learn1/vggmodel/vgg_18.pth",
-#                    map_location=torch.device('cpu'))
-model = VGG()
+model = torch.load("vggmodel/vgg_19.pth",
+                   map_location=torch.device('cpu'))
+model.eval()
+# model = VGG()
 # print(model)
 image = torch.reshape(image, (1, 3, 32, 32))
-model.eval()
 with torch.no_grad():
     output = model(image)
 
 print(output)
 print(output.argmax(1))
+
